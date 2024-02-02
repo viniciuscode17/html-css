@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mdias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-P.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-M.png" type="image/png">
+        <img src="imagens/foto-G.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    
+    <!--tem formatos MP3, WAV e OGG-->
+    <!--outra maneira tbm:-->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/SnapInsta.io - XXXTENTACION - SAD! (128 kbps).mp3" type="audio/mpeg">
+        <source src="midia/SnapInsta.io - XXXTENTACION - SAD! (128 kbps).ogg" type="audio/ogg">
+        <source src="midia/SnapInsta.io - XXXTENTACION - SAD! (128 kbps).wav" type="audio/wav"> 
+    </audio>
+</body>
+</html>
